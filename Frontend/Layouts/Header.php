@@ -1,5 +1,4 @@
-<?php
-<!DOCKTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
 <meta charset="UTF-8">
@@ -11,13 +10,13 @@
 <body>
 <nav class="Navbar navbar-expand-lg navbar-light bg-light">
 <div class="container">
-<a class="navbar-new" href=""</a>
-<button class="navbar-toggle" type="button" data-bs-toggle="collaspe" data-bs-target="navbarNAV"
+<a class="navbar-new" href=""></a>
+<button class="navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNAV">
     <span class="navbar-toggler-icon"></span>
 </button>
-<div class="collapse navbar-collapse" id="navbarNAV"
+<div class="collapse navbar-collapse" id="navbarNAV">
     <ul class="navbar-nav me-auto">
-<li class="nav-item"
+<li class="nav-item">
 <a class="nav-link" href="Index.php">Home</a>
 </li>
 </ul>
@@ -29,3 +28,7 @@
 <li class="nav-item">
 <a class="nav-link" href="cart.html">Cart</a>
 </li>
+</ul>
+</div>
+</div>
+</nav>
