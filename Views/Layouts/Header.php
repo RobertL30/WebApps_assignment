@@ -14,7 +14,7 @@
 <div class="container">
     <!-- Logo section -->
     <a class="navbar-brand" href="../Index.php">
-        <img src="/WebApps_assignment/Views/Images/Logo.png" alt="Book store Logo" width="150">
+        <img src="/Views/Images/Logo.png" alt="Book store Logo" width="300">
     </a>
 <a class="navbar-new" href=""></a>
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNAV">

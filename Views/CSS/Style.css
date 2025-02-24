@@ -2,12 +2,22 @@
 
 .Navbar{
     Padding: 15px 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
 }
+
 
 .nav-item {
     padding: 0 5px;
 }
 
 .nav-link{
-    padding: 8px 16px;
+    background-color: white;
+    color: black !important;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 8px 16px !important;
+    margin: 0 5px;
+    transition: all 0.3s ease;
 }
