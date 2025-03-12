@@ -33,7 +33,9 @@
                         <div class="card-body text-center">
                             <h5 class="card-title">Dracula</h5>
                             <p class="card-text">€12.99</p>
+                            <a href="Shop.php">
                             <button class="btn btn-primary btn-sm">View Details</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -44,7 +46,9 @@
                         <div class="card-body text-center">
                             <h5 class="card-title">Frankenstein</h5>
                             <p class="card-text">€14.99</p>
-                            <button class="btn btn-primary btn-sm">View Details</button>
+                            <a href="Shop.php">
+                                <button class="btn btn-primary btn-sm">View Details</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -55,7 +59,9 @@
                         <div class="card-body text-center">
                             <h5 class="card-title">H.P Lovecraft Anthology</h5>
                             <p class="card-text">€29.99</p>
-                            <button class="btn btn-primary btn-sm">View Details</button>
+                            <a href="Shop.php">
+                                <button class="btn btn-primary btn-sm">View Details</button>
+                            </a>
                         </div>
                     </div>
                 </div>
