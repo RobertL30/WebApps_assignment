@@ -11,12 +11,14 @@
 <body>
 <?php include 'Layouts/Header.php'; ?>
 
-<!-- Main content -->
+<div class="container my-5">
+     <h1 class="mb-4">Shop our collection!</h1>
 
 <!-- shop product grid -->
+<!-- first row -->
 <div class="row">
      <!-- Book 1: Dubliners -->
-    <div class="col-md-4 mb-4"
+    <div class="col-md-4 mb-4">
         <div class="card h-100">
             <img src="Images/shop/dubliners.jpg" class="card-img-top mx-auto d-block mt-3" alt="Dubliners" style="width: 150px; height 200px;">
     <div class="card-body">
@@ -30,9 +32,8 @@
         </div>
     </div>
 </div>
-<div class="row">
     <!-- Book 2: Four Tragedies -->
-    <div class="col-md-4 mb-4"
+    <div class="col-md-4 mb-4">
     <div class="card h-100">
         <img src="Images/shop/fours_tragedies.jpg" class="card-img-top mx-auto d-block mt-3" alt="Four Tragedies" style="width: 150px; height 200px;">
         <div class="card-body">
@@ -46,9 +47,8 @@
         </div>
     </div>
 </div>
-<div class="row">
     <!-- Book 3: The Phantom of the Opera -->
-    <div class="col-md-4 mb-4"
+    <div class="col-md-4 mb-4">
     <div class="card h-100">
         <img src="Images/shop/the_phantom_of_the_opera.jpg" class="card-img-top mx-auto d-block mt-3" alt="The Phantom of the Opera" style="width: 150px; height 200px;">
         <div class="card-body">
@@ -62,9 +62,16 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+
+<!-- second row -->
 <div class="row">
     <!-- Book 4: My Brilliant Career -->
-    <div class="col-md-4 mb-4"
+    <div class="col-md-4 mb-4">
     <div class="card h-100">
         <img src="Images/shop/my_brilliant_career.jpg" class="card-img-top mx-auto d-block mt-3" alt="My Brilliant Career" style="width: 150px; height 200px;">
         <div class="card-body">
@@ -78,9 +85,8 @@
         </div>
     </div>
 </div>
-<div class="row">
     <!-- Book 5: The Haunting of Hill House -->
-    <div class="col-md-4 mb-4"
+    <div class="col-md-4 mb-4">
     <div class="card h-100">
         <img src="Images/shop/Haunting_of_hill_house.jpg" class="card-img-top mx-auto d-block mt-3" alt="The Haunting of Hill House" style="width: 150px; height 200px;">
         <div class="card-body">
@@ -94,9 +100,8 @@
         </div>
     </div>
 </div>
-<div class="row">
     <!-- Book 6: Jane Eyre -->
-    <div class="col-md-4 mb-4"
+    <div class="col-md-4 mb-4">
     <div class="card h-100">
         <img src="Images/shop/jane_eyre.jpg" class="card-img-top mx-auto d-block mt-3" alt="Jane Eyre" style="width: 150px; height 200px;">
         <div class="card-body">
@@ -110,9 +115,15 @@
         </div>
     </div>
 </div>
-<div class="row">
+
+
+
+
+
+    <!-- third row -->
+    <div class="row">
     <!-- Book 7: Pride and Prejudice -->
-    <div class="col-md-4 mb-4"
+    <div class="col-md-4 mb-4">
     <div class="card h-100">
         <img src="Images/shop/Pride_prejudice.jpg" class="card-img-top mx-auto d-block mt-3" alt="Pride and Prejudice" style="width: 150px; height 200px;">
         <div class="card-body">
@@ -126,9 +137,8 @@
         </div>
     </div>
 </div>
-<div class="row">
     <!-- Book 8: Moby-Dick -->
-    <div class="col-md-4 mb-4"
+    <div class="col-md-4 mb-4">
     <div class="card h-100">
         <img src="Images/shop/moby_dick.jpg" class="card-img-top mx-auto d-block mt-3" alt="Moby-Dick" style="width: 150px; height 200px;">
         <div class="card-body">
@@ -142,9 +152,8 @@
         </div>
     </div>
 </div>
-<div class="row">
     <!-- Book 9: Great Expectations -->
-    <div class="col-md-4 mb-4"
+    <div class="col-md-4 mb-4">
     <div class="card h-100">
         <img src="Images/shop/great_expectations.jpg" class="card-img-top mx-auto d-block mt-3" alt="Great Expectations" style="width: 150px; height 200px;">
         <div class="card-body">
@@ -158,9 +167,15 @@
         </div>
     </div>
 </div>
-<div class="row">
+
+
+
+
+
+        <!-- fourth row -->
+        <div class="row">
     <!-- Book 10: Wuthering Heights -->
-    <div class="col-md-4 mb-4"
+    <div class="col-md-4 mb-4">
     <div class="card h-100">
         <img src="Images/shop/wuthering_heights.jpg" class="card-img-top mx-auto d-block mt-3" alt="Wuthering Heights" style="width: 150px; height 200px;">
         <div class="card-body">
@@ -174,11 +189,10 @@
         </div>
     </div>
 </div>
-<div class="row">
     <!-- Book 11: Frankenstein -->
-    <div class="col-md-4 mb-4"
+    <div class="col-md-4 mb-4">
     <div class="card h-100">
-        <img src="Images/shop/frank.jpg.jpg" class="card-img-top mx-auto d-block mt-3" alt="Frankenstein" style="width: 150px; height 200px;">
+        <img src="Images/shop/frank.jpg" class="card-img-top mx-auto d-block mt-3" alt="Frankenstein" style="width: 150px; height 200px;">
         <div class="card-body">
             <h5 class="card-title">Frankenstein</h5>
             <p class="card-subtitle mb-2 text-muted">Mary Shelly</p>
@@ -190,9 +204,8 @@
         </div>
     </div>
 </div>
-<div class="row">
     <!-- Book 12: Crime and Punishment -->
-    <div class="col-md-4 mb-4"
+    <div class="col-md-4 mb-4">
     <div class="card h-100">
         <img src="Images/shop/crime_punishment.jpg" class="card-img-top mx-auto d-block mt-3" alt="Crime and Punishment" style="width: 150px; height 200px;">
         <div class="card-body">
@@ -206,11 +219,17 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+ <!-- fifth row -->
 <div class="row">
     <!-- Book 13: The Picture of Dorian Gray -->
-    <div class="col-md-4 mb-4"
+    <div class="col-md-4 mb-4">
     <div class="card h-100">
-        <img src="Images/shop/dorian_gray.jpg.jpg" class="card-img-top mx-auto d-block mt-3" alt="The Picture of Dorian Gray" style="width: 150px; height 200px;">
+        <img src="Images/shop/dorian_gray.jpg" class="card-img-top mx-auto d-block mt-3" alt="The Picture of Dorian Gray" style="width: 150px; height 200px;">
         <div class="card-body">
             <h5 class="card-title">The Picture of Dorian Gray</h5>
             <p class="card-subtitle mb-2 text-muted">Oscar Wilde</p>
@@ -222,11 +241,10 @@
         </div>
     </div>
 </div>
-<div class="row">
     <!-- Book 14: Anna Karenina -->
-    <div class="col-md-4 mb-4"
+    <div class="col-md-4 mb-4">
     <div class="card h-100">
-        <img src="Images/shop/anna_karenina.jpg.jpg" class="card-img-top mx-auto d-block mt-3" alt="Anna Karenina" style="width: 150px; height 200px;">
+        <img src="Images/shop/anna_karenina.jpg" class="card-img-top mx-auto d-block mt-3" alt="Anna Karenina" style="width: 150px; height 200px;">
         <div class="card-body">
             <h5 class="card-title">Anna Karenina</h5>
             <p class="card-subtitle mb-2 text-muted">Leo Tolstoy</p>
@@ -238,9 +256,8 @@
         </div>
     </div>
 </div>
-<div class="row">
     <!-- Book 15: The Odyssey -->
-    <div class="col-md-4 mb-4"
+    <div class="col-md-4 mb-4">
     <div class="card h-100">
         <img src="Images/shop/odyssey.jpg" class="card-img-top mx-auto d-block mt-3" alt="The Odyssey" style="width: 150px; height 200px;">
         <div class="card-body">
@@ -254,9 +271,15 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+<!-- sixth row -->
 <div class="row">
     <!-- Book 16: The War of the Worlds -->
-    <div class="col-md-4 mb-4"
+    <div class="col-md-4 mb-4">
     <div class="card h-100">
         <img src="Images/shop/war_of_the_worlds.jpg" class="card-img-top mx-auto d-block mt-3" alt="The War of the Worlds" style="width: 150px; height 200px;">
         <div class="card-body">
@@ -270,9 +293,8 @@
         </div>
     </div>
 </div>
-<div class="row">
     <!-- Book 17: Madame Bovary -->
-    <div class="col-md-4 mb-4"
+    <div class="col-md-4 mb-4">
     <div class="card h-100">
         <img src="Images/shop/Madame_bovary.jpg" class="card-img-top mx-auto d-block mt-3" alt="Madame Bovary" style="width: 150px; height 200px;">
         <div class="card-body">
@@ -286,9 +308,8 @@
         </div>
     </div>
 </div>
-<div class="row">
     <!-- Book 18: The Canterbury Tales -->
-    <div class="col-md-4 mb-4"
+    <div class="col-md-4 mb-4">
     <div class="card h-100">
         <img src="Images/shop/canterbury_tales.jpg" class="card-img-top mx-auto d-block mt-3" alt="The Canterbury Tales" style="width: 150px; height 200px;">
         <div class="card-body">
@@ -303,6 +324,7 @@
     </div>
 </div>
 
+</div>
 
 <?php include 'Layouts/Footer.php'; ?>
 </body>
