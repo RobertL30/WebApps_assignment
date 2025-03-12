@@ -19,22 +19,32 @@
 <?php include '..\Layouts\Header.php' ; ?>
 
 <!-- main content -->
-<div class="container">
-    <div class="signin-container">
-    <h2 class="text-center mb-4">Sign in!</h2>
-    <div class="mb-3">
-        <label for="username" class="form-label">Username</label>
-        <input type="text" class="form-control" id="username" name="username" required>
-    </div>
-    <div class="mb-3">
-        <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password" name="password" required>
-    </div>
-    <div class="d-grid">
-        <button type="submit" class="btn btn-primary">Sign In</button>
-        </div>
-        <div class="text-centre mt-3">
-            <p>Not a member yet? <a href="sign_up.php">Sing up here!</a> </p>
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-dark text-white">
+                    <h3 class="mb-0">Sign In</h3>
+                </div>
+                <div class="card-body p-4">
+                    <form action="process_login.php" method="post">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" name="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-dark">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer bg-light text-center">
+                    <p class="mb-0">Not a member yet? <a href="sign_up.php">Sign up here!</a></p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
