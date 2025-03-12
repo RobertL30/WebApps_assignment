@@ -1,3 +1,4 @@
+<hr>
 <footer class="bg-light mt-5 py-3">
         <div class="container">
             <div class="row">

@@ -29,12 +29,11 @@
                 <!-- Book 1 -->
                 <div class="col-md-4 mb-3">
                     <div class="card">
-                        <a href="/Models/Products.php" class="text-decoration-none text-dark"
                         <img src="/Views/Images/dracula.jpg" class="card-img-top mx-auto d-block mt-3" alt="Book Cover" style="width: 150px; height: 200px;">
                         <div class="card-body text-center">
                             <h5 class="card-title">Dracula</h5>
                             <p class="card-text">€12.99</p>
-                            <button class="btn btn-primary btn-sm"> View Details</button>
+                            <button class="btn btn-primary btn-sm">View Details</button>
                         </div>
                     </div>
                 </div>
@@ -45,7 +44,7 @@
                         <div class="card-body text-center">
                             <h5 class="card-title">Frankenstein</h5>
                             <p class="card-text">€14.99</p>
-                            <button class="btn btn-primary btn-sm"> View Details</button>
+                            <button class="btn btn-primary btn-sm">View Details</button>
                         </div>
                     </div>
                 </div>
@@ -56,7 +55,7 @@
                         <div class="card-body text-center">
                             <h5 class="card-title">H.P Lovecraft Anthology</h5>
                             <p class="card-text">€29.99</p>
-                            <button class="btn btn-primary btn-sm"> View Details</button>
+                            <button class="btn btn-primary btn-sm">View Details</button>
                         </div>
                     </div>
                 </div>
@@ -65,15 +64,42 @@
     </div>
 
     <!-- member info -->
-    <div class="row">
+    <div class="row my-5">
         <div class="col-12">
-            <div class="p-4 bg-light rounded">
-                <h3>Member Benefits</h3>
-                <p>Members get access to exclusive books not available to regular customers. Create an account to unlock these special collections.</p>
+            <div class="card shadow-sm">
+                <div class="card-header bg-dark text-white">
+                    <h3 class="mb-0">Member Benefits</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <p class="lead">Join our membership program to unlock exclusive benefits:</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Access to exclusive limited-edition books
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Members-only discounts on new releases
+                                </li>
+                            </ul>
+                            <p class="mt-3">Create an account to unlock these special collections.</p>
+                        </div>
+                        <div class="col-md-5 d-flex align-items-center justify-content-center">
+                            <div class="text-center">
+                                <img src="/Views/Images/membership.png" alt="Membership" class="img-fluid rounded mb-3" style="max-width: 200px;">
+                                <div>
+                                    <a href="#" class="btn btn-dark">Create Account</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
 <?php include 'Layouts\Footer.php' ; ?>
