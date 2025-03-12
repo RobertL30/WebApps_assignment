@@ -34,7 +34,7 @@
                 <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/Models/Login.php">Login</a>
+                <a class="nav-link" href="/Views/auth/sign_in.php">Sign in</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/Models/cart.php">Cart</a>
