@@ -12,7 +12,7 @@
 <?php include 'Layouts/Header.php'; ?>
 
 <div class="container my-5">
-     <h1 class="mb-4">Shop our collection!</h1>
+     <h1 class="mb-4 text-center">Shop our collection!</h1>
 
 <!-- shop product grid -->
 <!-- first row -->
