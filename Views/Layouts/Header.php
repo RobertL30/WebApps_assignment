@@ -14,7 +14,7 @@
 <div class="container">
     <!-- Logo section -->
     <a class="navbar-brand" href="/Views/Index.php">
-        <img src="/Views/Images/Logo.png" alt="Book store Logo" width="300">
+        <img src="/Views/Images/Logo.png" alt="Book store Logo" width="190" height="190">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNAV">
         <span class="navbar-toggler-icon"></span>
@@ -25,7 +25,7 @@
                 <a class="nav-link" href="/Views/Index.php">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Shop</a>
+                <a class="nav-link" href="/Views/Shop.php">Shop</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Members Books</a>
