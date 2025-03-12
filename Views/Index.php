@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paper Train Book Store</title>
+    <title>PaperTrail Book Store</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -96,7 +96,7 @@
                             <div class="text-center">
                                 <img src="/Views/Images/membership.png" alt="Membership" class="img-fluid rounded mb-3" style="max-width: 200px;">
                                 <div>
-                                    <a href="#" class="btn btn-dark">Create Account</a>
+                                    <a href="../Views/auth/sign_up.php" class="btn btn-dark">Create Account</a>
 
                                 </div>
                             </div>
