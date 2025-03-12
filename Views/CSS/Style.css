@@ -57,3 +57,14 @@
 .Navbar {
     background-color: white !important;
 }
+
+
+/* NEED TO FIX THIS
+/*Sign in page styling
+.signin-container{
+    max-width: 500px;
+    margin: 250px auto;
+    padding: 30px;
+    border: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+} */
