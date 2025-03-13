@@ -9,3 +9,10 @@ USE webapp_db;
         password VARCHAR(255) NOT NULL,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     );
+
+USE webapp_db;
+ALTER TABLE users
+    ADD first_name VARCHAR(50) AFTER password,
+ADD last_name VARCHAR(50) AFTER first_name,
+ADD address TEXT AFTER last_name,
+ADD contact_number VARCHAR(20) AFTER address;
