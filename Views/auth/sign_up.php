@@ -11,7 +11,7 @@
 <body>
 <?php include '..\Layouts\Header.php' ; ?>
 
-<form action="/Controllers/UserController.php" method="post">
+<form action="/Controllers/sign_up_process.php" method="post">
 <div class="container my-5">
     <div class="row justify-content-center">
         <div class="col-md-6">
