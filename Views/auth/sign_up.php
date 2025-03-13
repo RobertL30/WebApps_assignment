@@ -11,6 +11,7 @@
 <body>
 <?php include '..\Layouts\Header.php' ; ?>
 
+<form action="/Controllers/UserController.php" method="post">
 <div class="container my-5">
     <div class="row justify-content-center">
         <div class="col-md-6">
@@ -58,13 +59,14 @@
                     <div class="d-grid">
                         <button type="submit" class="btn btn-dark">Create Account</button>
                     </div>
-                    </form>
+
                 </div>
             </div>
         </div>
     </div>
 </div>
-</div>
+</form>
+
 
 
 <?php include '..\Layouts\Footer.php' ; ?>
