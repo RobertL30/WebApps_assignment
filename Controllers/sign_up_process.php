@@ -19,11 +19,6 @@ if (isset($_POST['firstName'])) {
 $statement =$connection->prepare($sql);
 $statement ->execute($new_user);
 
-//redirect the user to the sign in page - comment out for now.
-// Need to provide more user feed back after account creation.
-       // header("location:../Views/auth/sign_in.php");
-      //  exit
-
         //store username in variable to print it back to the user later on
         $success = true;
         $username = $new_user['username'];
