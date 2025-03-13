@@ -52,8 +52,9 @@ include '../Views/Layouts/Header.php';?>
     <div class="col-md-6">
         <?php if ($email_error): ?>
 <div class="alert alert-danger">
-    <h4>Registration was unsuccessful.</h4>
-    <p>The email address used is already used, please try again with a different email address</p>
+    <h4>Registration unsuccessful.</h4>
+    <p>The email address you have used is already registered.</p>
+    <p>Please try again with a different email address</p>
     <hr>
     <p><a href="../Views/auth/sign_up.php" class="btn btn-primary">Try again</a></p>
         </div>
