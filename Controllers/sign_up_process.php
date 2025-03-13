@@ -35,16 +35,22 @@ $statement ->execute($new_user);
 }
 
 //return feedback to user
-include '../Views/Layouts/Header.php'
+include '../Views/Layouts/Header.php';
+?>
 
 <div class="container my-5">
-<div class="row justify-content-center">
-<dib class="cold-md-6">
-<?php if ($success): ?>
-<div class="alert alert-success">
-<h4>Registration has been successful</h4>
-<p>Your username is: <strong><?php echo ($username); ?></strong></p>
-<hr>
-<p><a href="../Views/auth/sign_in.php" class="btn btn-primary"></a></p>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+        <?php if ($success): ?>
+        <div class="alert alert-success">
+        <h4>Registration has been successful</h4>
+        <p>Your username is: <strong><?php echo ($username); ?></strong></p>
+            <hr>
+        <p><a href="../Views/auth/sign_in.php" class="btn btn-primary ">Sign In Now!</a></p>
+            </div>
+                <?php endif; ?>
+        </div>
+    </div>
 </div>
-?>
+
+<?php include '../Views/Layouts/Footer.php'; ?>
