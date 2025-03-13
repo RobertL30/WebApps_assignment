@@ -45,8 +45,8 @@ if (isset($_POST['firstName'])) {
 
 //return feedback to user if email exists
 //if email doesnt exist then user is given success message
-include '../Views/Layouts/Header.php';
-?>
+//return feedback to user upon successful sign up
+include '../Views/Layouts/Header.php';?>
 <div class="container my-5">
 <div class="row justify-content-center">
     <div class="col-md-6">
@@ -57,8 +57,10 @@ include '../Views/Layouts/Header.php';
     <hr>
     <p><a href="../Views/auth/sign_up.php" class="btn btn-primary">Try again</a></p>
         </div>
+        <?php endif; ?>
+
+
     <?php if ($success): ?>
-//return feedback to user upon successful sign up
         <div class="alert alert-success">
         <h4>Registration has been successful!</h4>
         <p>Your username is: <strong><?php echo ($username); ?></strong></p>
