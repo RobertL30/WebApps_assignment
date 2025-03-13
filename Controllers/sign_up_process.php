@@ -57,6 +57,25 @@ if ($email_stmt ->rowCount () > 0) {
     }
 }
 
+//retrun feedback to user if email exists
+//if email doesnt exist then user is given success message
+include '../Views/Layouts/Header.php';
+?>
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <? pfp if ($email_error): ?>
+<div class="alert alert-danger">
+    <h4>Registration was unsuccessful.</h4>
+    <p>The email address used is relady used, please try again with a different email address</p>
+    <hr>
+    <p><a href="../Views/auth/sign_up.php" class="btn btn-primary">Try again</a></p>
+</div>
+    </div>
+
+</div>
+    <?php if ($success): ?>
+
+<?php include '../Views/Layouts/Footer.php'; ?>
 
 //return feedback to user upon successful sign up
 include '../Views/Layouts/Header.php';
@@ -64,9 +83,9 @@ include '../Views/Layouts/Header.php';
 <div class="container my-5">
     <div class="row justify-content-center">
         <div class="col-md-6">
-        <?php if ($success): ?>
+
         <div class="alert alert-success">
-        <h4>Registration has been successful</h4>
+        <h4>Registration has been successful!</h4>
         <p>Your username is: <strong><?php echo ($username); ?></strong></p>
             <hr>
         <p><a href="../Views/auth/sign_in.php" class="btn btn-primary ">Sign In Now!</a></p>
