@@ -1,21 +1,20 @@
 <?php
-
 require_once '../Config/DBconnect.php';
 
-if (isset($_POST['firstname'])) {
+if (isset($_POST['firstName'])) {
     try{
     $new_user = array(
-        "username" => ($_POST['fisrtName'] . $_POST['lastName']),
-        "email" => $_POST ['email'],
+        "username" => ($_POST['firstName'] . $_POST['lastName']),
+        "email" => $_POST['email'],
         "password" => $_POST['password'],
         "first_name" => $_POST['firstName'],
         "last_name" => $_POST['lastName'],
         "address" => $_POST['address'],
-        "contact_no" => $_POST['contactNo']
+        "contact_number" => $_POST['contactNumber']
     );
 
-    $sql = "INSERT INTO users (username, email, password, first_name, Last_name, address, contact_no)
-        VALUES (:username, email, :password, :first_name, :last_name, :address, :contact_no");
+    $sql = "INSERT INTO users (username, email, password, first_name, last_name, address, contact_number)
+        VALUES (:username, :email, :password, :first_name, :last_name, :address, :contact_number)";
 
 $statement =$connection->prepare($sql);
 $statement ->execute($new_user);
@@ -25,7 +24,7 @@ $statement ->execute($new_user);
         exit;
 
     } catch(PDOException $error) {
-        echo $sql . "<br>" . $error->getMessage()
+        echo $sql . "<br>" . $error->getMessage();
     }
 }
 ?>
