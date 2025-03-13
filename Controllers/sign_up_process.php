@@ -1,6 +1,7 @@
 <?php
 require_once '../Config/DBconnect.php';
 
+
 if (isset($_POST['firstName'])) {
     try{
     $new_user = array(
@@ -29,10 +30,37 @@ $statement ->execute($new_user);
     }
 }
 
-//return feedback to user
+//check if email address already exists
+// set up the variables
+$success = false;
+$email_error = false;
+
+$check_email = "SELECT * FROM users WHERE email = :email";
+$email_stmt = $connection->prepare($check_email);
+$email_stmt->execute(['email'=>$_POST['email']]);
+
+if ($email_stmt ->rowCount () > 0) {
+    //email exists
+    $email_error = true;
+} else {
+    try {
+        $new_user = array(
+            "username" => ($_POST['firstName'] . $_POST['lastName']),
+            "email" => $_POST['email'],
+            "password" => $_POST['password'],
+            "first_name" => $_POST['firstName'],
+            "last_name" => $_POST['lastName'],
+            "address" => $_POST['address'],
+            "contact_number" => $_POST['contactNumber']);
+
+        )
+    }
+}
+
+
+//return feedback to user upon successful sign up
 include '../Views/Layouts/Header.php';
 ?>
-
 <div class="container my-5">
     <div class="row justify-content-center">
         <div class="col-md-6">
@@ -47,5 +75,4 @@ include '../Views/Layouts/Header.php';
         </div>
     </div>
 </div>
-
 <?php include '../Views/Layouts/Footer.php'; ?>
