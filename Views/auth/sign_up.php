@@ -59,12 +59,11 @@
                     <div class="d-grid">
                         <button type="submit" class="btn btn-dark">Create Account</button>
                     </div>
-
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </form>
 
 

@@ -19,12 +19,32 @@ if (isset($_POST['firstName'])) {
 $statement =$connection->prepare($sql);
 $statement ->execute($new_user);
 
-//redirect the user to the sign in page
-        header("location:../Views/auth/sign_in.php");
-        exit;
+//redirect the user to the sign in page - comment out for now.
+// Need to provide more user feed back after account creation.
+       // header("location:../Views/auth/sign_in.php");
+      //  exit
+
+        //store username in variable to print it back to the user later on
+        $success = true;
+        $username = $new_user['username'];
+
 
     } catch(PDOException $error) {
         echo $sql . "<br>" . $error->getMessage();
     }
 }
+
+//return feedback to user
+include '../Views/Layouts/Header.php'
+
+<div class="container my-5">
+<div class="row justify-content-center">
+<dib class="cold-md-6">
+<?php if ($success): ?>
+<div class="alert alert-success">
+<h4>Registration has been successful</h4>
+<p>Your username is: <strong><?php echo ($username); ?></strong></p>
+<hr>
+<p><a href="../Views/auth/sign_in.php" class="btn btn-primary"></a></p>
+</div>
 ?>
