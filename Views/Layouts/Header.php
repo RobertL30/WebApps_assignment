@@ -46,12 +46,11 @@ if (session_status() ==PHP_SESSION_NONE) {
                 <li class="nav-item">
                     <a class="nav-link" href="/Views/auth/sign_in.php">Sign in</a>
                 </li>
-            <?pfp else: ?>
-            <li class="new-item"
+            <?php else: ?>
+            <li class="new-item">
                 <a class="nav-link" style="background-color: #ffeeee; font-weight: bold;" href="/Controllers/sign_out_process.php">Sign out</a>
         </li>
             <?php endif; ?>
-            </li>
             <li class="nav-item">
                 <a class="nav-link" href="/Models/cart.php">Cart</a>
             </li>
