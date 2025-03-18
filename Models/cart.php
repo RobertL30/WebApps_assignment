@@ -8,6 +8,7 @@ function addToCart($product_id, $title, $price, $quantity = 1) {
     }
 
     // If product already in cart, increase quantity
+    // if product already in cart increase quant
     if (isset($_SESSION['cart'][$product_id])) {
         $_SESSION['cart'][$product_id]['quantity'] += $quantity;
     } else {
@@ -22,7 +23,7 @@ function addToCart($product_id, $title, $price, $quantity = 1) {
 
 function updateCartItem($product_id, $quantity) {
     if (isset($_SESSION['cart'][$product_id])) {
-        // If quantity is 0 or less, remove the item
+        // If quant is 0 or less remove the item
         if ($quantity <= 0) {
             removeCartItem($product_id);
         } else {
