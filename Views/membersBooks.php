@@ -24,7 +24,8 @@ if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] !== true) {
 
 
 <!-- main content -->
-
+<div class="container my-5">
+    <h1 class="mb-4 text-center">Shop our exclusive, members collection!</h1>
 
 <!-- fourth row -->
 <div class="row">
