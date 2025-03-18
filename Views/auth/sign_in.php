@@ -27,7 +27,7 @@
                     <h3 class="mb-0">Sign In</h3>
                 </div>
                 <div class="card-body p-4">
-
+                    <form action="/Controllers/sign_in_process.php" method="post">
                         <div class="mb-3">
                             <label for="username" class="form-label">Username</label>
                             <input type="text" class="form-control" id="username" name="username" required>
@@ -40,12 +40,15 @@
                             <button type="submit" class="btn btn-dark">Sign In</button>
                         </div>
                 </div>
+
                 <div class="card-footer bg-light text-center">
                     <p class="mb-0">Not a member yet? <a href="sign_up.php">Sign up here!</a></p>
                 </div>
+                </form>
             </div>
         </div>
     </div>
+
 </div>
 
 
