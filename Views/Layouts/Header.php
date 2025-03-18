@@ -5,7 +5,6 @@ if (session_status() ==PHP_SESSION_NONE) {
     }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -47,12 +46,6 @@ if (session_status() ==PHP_SESSION_NONE) {
                     <a class="nav-link" href="/Views/auth/sign_in.php">Sign in</a>
                 </li>
             <?php endif; ?>
-           <!-- <li class="nav-item">
-                <a class="nav-link" href="#">Members Books</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/Views/auth/sign_in.php">Sign in</a>
-            </li> -->
             <li class="nav-item">
                 <a class="nav-link" href="/Models/cart.php">Cart</a>
             </li>
@@ -60,16 +53,11 @@ if (session_status() ==PHP_SESSION_NONE) {
                 <a class="nav-link" href="#">About</a>
             </li>
         </ul>
-
-
         <?php if (isset($_SESSION['is_logged_in']) && $_SESSION['is_logged_in'] === true): ?>
         <!--sign out btn & message on right -->
         <ul class="navbar-nav ms-auto">
-           <!-- <li class="nav-item">
-                <span class="nav-link">Welcome, <?phph echo htmlspecialchars(($_SESSION['username']); ?></span>
-            </li> -->
             <li class="nav-item">
-            <a class="nav-link text-danger" href="/Controllers/sign_out_process">Sign out</a>
+            <a class="nav-link" style="background-color: #ffeeee; font-weight: bold" href="/Controllers/sign_out_process">Sign out</a>
             </li>
         </ul>
         <?php endif; ?>
