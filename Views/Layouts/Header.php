@@ -1,3 +1,11 @@
+<?php
+
+if (session_status() ==PHP_SESSION_NONE) {
+    session_status();
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -28,8 +36,20 @@
                 <a class="nav-link" href="/Views/Shop.php">Shop</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Members Books</a>
+                <?php if (isset($_SESSION['is_logged_in']) $_SESSION['is_logged_in'] == true): ): ?>
+                <a class="nav-link" href="/Views/membersBooks.php">Members Books</a>
+                <?php else: ?>
+                <a class="nav-link" href="/Views/auth/sign_in.php">Members Books</a>
+                <? endif; ?>
             </li>
+            <?php if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] !== true): ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Views/auth/sign_in.php">Sign in</a>
+                </li>
+            <?php endif; ?>
+           <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Members Books</a>
+            </li> -->
             <li class="nav-item">
                 <a class="nav-link" href="/Views/auth/sign_in.php">Sign in</a>
             </li>

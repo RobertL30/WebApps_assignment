@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+//check if the user is logged in
+if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] !== true) {
+
+    header("Location: auth/sign_in.php");
+    exit();
+}?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,17 +17,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<?php
-session_start();
 
-//check if the user is logged in
-if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] !== true) {
 
-    header("Location: auth/sign_in.php");
-    exit();
-}
-
-<?php include 'Layouts\Header.php' ; ?>
+<?php include 'Layouts/Header.php' ; ?>
 
 
 
