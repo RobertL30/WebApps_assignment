@@ -50,7 +50,7 @@ include '../Views/Layouts/Header.php';
          <?php if ($login_success): ?>
          <div class="alert alert-success">
              <h4> Your sign in was successful!</h4>
-             <p>Hello, <?php echo htmlspecialchars($_SESSION['username']);?> !</p>
+             <p>Hello, <?php echo htmlspecialchars($_SESSION['username']);?>!</p>
              <hr>
              <p><a href="../Views/membersBooks.php" class="btn btn-primary">Browse members books</a></p>
          </div>

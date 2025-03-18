@@ -41,11 +41,17 @@ if (session_status() ==PHP_SESSION_NONE) {
                 <a class="nav-link" href="/Views/auth/sign_in.php">Members Books</a>
                 <?php endif; ?>
             </li>
+            <li class="nav-item">
             <?php if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] !== true): ?>
                 <li class="nav-item">
                     <a class="nav-link" href="/Views/auth/sign_in.php">Sign in</a>
                 </li>
+            <?pfp else: ?>
+            <li class="new-item"
+                <a class="nav-link" style="background-color: #ffeeee; font-weight: bold;" href="/Controllers/sign_out_process.php">Sign out</a>
+        </li>
             <?php endif; ?>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="/Models/cart.php">Cart</a>
             </li>
@@ -53,14 +59,7 @@ if (session_status() ==PHP_SESSION_NONE) {
                 <a class="nav-link" href="#">About</a>
             </li>
         </ul>
-        <?php if (isset($_SESSION['is_logged_in']) && $_SESSION['is_logged_in'] === true): ?>
-        <!--sign out btn & message on right -->
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-            <a class="nav-link" style="background-color: #ffeeee; font-weight: bold" href="/Controllers/sign_out_process">Sign out</a>
-            </li>
-        </ul>
-        <?php endif; ?>
+
     </div>
 </div>
 </nav>

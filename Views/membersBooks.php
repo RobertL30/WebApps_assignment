@@ -24,24 +24,6 @@ if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] !== true) {
 
 
 <!-- main content -->
-<!-- Book 9: Great Expectations -->
-<div class="col-md-4 mb-4">
-    <div class="card h-100">
-        <img src="Images/shop/great_expectations.jpg" class="card-img-top mx-auto d-block mt-3" alt="Great Expectations" style="width: 150px; height 200px;">
-        <div class="card-body">
-            <h5 class="card-title">Great Expectations</h5>
-            <p class="card-subtitle mb-2 text-muted">Charles Dickens</p>
-            <p class="card-text small">An orphan named Pip rises through society, grappling with love, wealth, and personal growth.</p>
-            <p class="card-text fw-bold">€20.99</p>
-        </div>
-        <div class="card-footer bg-white border-top-0">
-            <button class="btn btn-dark w-100">Add to cart</button>
-        </div>
-    </div>
-</div>
-
-
-
 
 
 <!-- fourth row -->
