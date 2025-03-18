@@ -7,6 +7,7 @@ require_once '../common.php';
 session_start();
 
 $login_error = false;
+$login_success = false;
 
 if (isset($_POST['username']) && isset($_POST['password'])) {
     //preps SQL statement to check the user details
