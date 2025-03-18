@@ -1,6 +1,25 @@
 <?php
 session_start();
 
+// Check if the user is logged in
+if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] !== true) {
+    header("Location: auth/sign_in.php");
+    exit();
+}
+
+require_once '../Config/DBconnect.php';
+require_once '../Models/Products.php';
+require_once '../common.php';
+
+// Create product model instance
+$productModel = new Products($connection);
+// Get member-only books
+$memberBooks = $productModel->getMemberBooks();
+?>
+
+<?php
+session_start();
+
 //check if the user is logged in
 if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] !== true) {
 
