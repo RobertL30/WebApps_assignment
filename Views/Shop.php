@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once '../Config/DBconnect.php';
 require_once '../Models/Products.php';
 require_once '../common.php';

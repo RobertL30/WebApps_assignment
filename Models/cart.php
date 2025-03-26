@@ -1,4 +1,5 @@
 <?php
+session_start();
 class Cart
 {
     public static function addToCart($product_id, $title, $price, $quantity = 1)
