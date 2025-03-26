@@ -26,7 +26,7 @@ $total = Cart::getCartTotal();
     <h1 class="mb-4 text-center">Your shopping cart</h1>
 
     <?php if(empty($cart)): ?>
-    <div class="alter alter-info">
+    <div class="alert alert-info">
         Your cart is empty. <a href="/Views/Shop.php">Why not check out our selection?</a>
     </div>
     <?php else: ?>

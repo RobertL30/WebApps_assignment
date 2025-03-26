@@ -1,6 +1,6 @@
 
 <?php
-require_once '../Views/viewCart.php';
+require_once '../Models/cart.php';
 require_once '../common.php';
 
 // Start session
@@ -18,6 +18,7 @@ if (isset($_POST['add_to_cart'])) {
 
 
     Cart::addToCart($product_id, $title, $price);
+
     //set a flag for success message
     $_SESSION['added_to_cart'] = true;
 

@@ -9,7 +9,7 @@ $productModel = new Products ($connection);
 $regularBooks = $productModel->getRegularBooks();
 
 $showMessage = false;
-if (isset($_SESSION['added_to_cart']) && $_SESSION['added_to_cart'] == true) {
+if (isset($_SESSION['added_to_cart']) && $_SESSION['added_to_cart'] === true) {
     $showMessage = true;
     //clear flag after its been used
     $_SESSION['added_to_cart'] = false;
@@ -34,7 +34,7 @@ if (isset($_SESSION['added_to_cart']) && $_SESSION['added_to_cart'] == true) {
 
     <!--success message -->
     <?php if($showMessage): ?>
-    <div class="alert alter-success mb-4">
+    <div class="alert alert-success mb-4">
          Item added to cart.
     </div>
     <?php endif; ?>
