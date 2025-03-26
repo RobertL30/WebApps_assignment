@@ -1,6 +1,6 @@
-// Controllers/CartController.php
+
 <?php
-require_once '../Models/cart.php';
+require_once '../Views/viewCart.php';
 require_once '../common.php';
 
 // Start session
@@ -29,7 +29,7 @@ if (isset($_POST['update_cart'])) {
     Cart::updateCartItem($product_id, $quantity);
 
     // Redirect back to cart page
-    header("Location: /Views/cart.php");
+    header("Location: /Views/viewCart.php");
     exit();
 }
 
@@ -40,7 +40,7 @@ if (isset($_POST['remove_from_cart'])) {
     Cart::removeCartItem ($product_id);
 
     // Redirect back to cart page
-    header("Location: /Views/cart.php");
+    header("Location: /Views/viewCart.php");
     exit();
 }
 ?>
