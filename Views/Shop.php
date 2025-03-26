@@ -7,6 +7,13 @@ require_once '../common.php';
 $productModel = new Products ($connection);
 // Get regular books
 $regularBooks = $productModel->getRegularBooks();
+
+$showMessage = false;
+if (isset($_SESSION['added_to_cart']) && $_SESSION['added_to_cart'] == true) {
+    $showMessage = true;
+    //clear flag after its been used
+    $_SESSION['added_to_cart'] = false;
+}
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +31,14 @@ $regularBooks = $productModel->getRegularBooks();
 
 <div class="container my-5">
      <h1 class="mb-4 text-center">Shop our collection!</h1>
+
+    <!--success message -->
+    <?php if($showMessage): ?>
+    <div class="alert alter-success mb-4">
+         Item added to cart.
+    </div>
+    <?php endif; ?>
+
 
 <div class="row">
     <?php foreach ($regularBooks as $book): ?>

@@ -8,13 +8,18 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
+
+
 // Process add to cart action
 if (isset($_POST['add_to_cart'])) {
     $product_id = $_POST['product_id'];
     $title = $_POST['title'];
     $price = $_POST['price'];
 
+
     Cart::addToCart($product_id, $title, $price);
+    //set a flag for success message
+    $_SESSION['added_to_cart'] = true;
 
     // Redirect to shop page
     header("Location: /Views/Shop.php");
