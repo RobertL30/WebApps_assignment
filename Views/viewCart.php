@@ -21,3 +21,31 @@ $total = Cart::getCartTotal();
 </head>
 <body>
 <?php include 'Layouts/Header.php'; ?>
+
+<div class="container my-5">
+    <h1 class="mb-4 text-center">Your shopping cart</h1>
+
+    <?php if(empty($cart)): ?>
+    div<div class="alter alter-info">
+        Your cart is empty. <a href="/Views/Shop.php">Why not check out our selection?</a>
+    </div>
+    <?php else: ?>
+    <div class="table-responsive"
+         <table class="Table table-hover">
+             <thead>
+             <tr>
+                 <th>Title</th>
+                 <th>Price</th>
+                 <th>Quantity</th>
+                 <th>Subtotal</th>
+             </tr>
+             </thead>
+             <tbody>
+             <?php foreach ($cart as $product_id => $item): ?>
+             <tr>
+                 <td><?php echo escape($item['Title']); ?></td>
+                 <td><?php echo escape($item['Price']);?></td>
+             </tbody>
+
+         </table>
+</div>
