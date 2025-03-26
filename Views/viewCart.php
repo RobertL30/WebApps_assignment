@@ -55,7 +55,7 @@ $total = Cart::getCartTotal();
                  <td>€<?php echo number_format($item['price'] * $item['quantity'], 2); ?></td>
              <td>
              <form action="/Controllers/CartController.php" method="post">
-                 <input type="hidden" name="product_id" value="<?php echo $product_id"; ?>">
+                 <input type="hidden" name="product_id" value="<?php echo $product_id;?>">
                  <button type="submit" name="remove_from_cart" class="btn btn-sm btn-danger">Remove</button>
                  </form>
                  </td>
