@@ -1,5 +1,4 @@
 <?php
-global $showMessage;
 session_start();
 
 // Check if the user is logged in
@@ -16,15 +15,14 @@ require_once '../common.php';
 $productModel = new Products($connection);
 // Get member-only books
 $memberBooks = $productModel->getMemberBooks();
+
+$showMessage = false;
+if (isset($_SESSION['added_to_cart']))
+    if ($_SESSION['added_to_cart'] === true ) {
+    $showMessage = true;
+    unset($_SESSION['added_to_cart']);
+}
 ?>
-
-<?php
-//check if the user is logged in
-if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] !== true) {
-
-    header("Location: auth/sign_in.php");
-    exit();
-}?>
 
 <!DOCTYPE html>
 <html lang="en">

@@ -1,5 +1,8 @@
 <?php
-session_start();
+if (session_start() ==PHP_SESSION_NONE) {
+    session_start();
+}
+
 require_once '../Config/DBconnect.php';
 require_once '../Models/Products.php';
 require_once '../common.php';
@@ -10,11 +13,11 @@ $productModel = new Products ($connection);
 $regularBooks = $productModel->getRegularBooks();
 
 $showMessage = false;
-if (isset($_SESSION['added_to_cart']) && $_SESSION['added_to_cart'] === true) {
-    $showMessage = true;
-    //clear flag after its been used
-    $_SESSION['added_to_cart'] = false;
-}
+if (isset($_SESSION['added_to_cart']))
+    if ($_SESSION['added_to_cart'] === true ) {
+        $showMessage = true;
+        unset($_SESSION['added_to_cart']);
+    }
 ?>
 
 <!DOCTYPE html>
