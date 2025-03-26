@@ -66,7 +66,6 @@ if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] !== true) {
                         <input type="hidden" name="price" value="<?php echo escape($book['price']);?>">
                         <button type="submit" name="add_to_cart" class="btn btn-dark w-100">Add to cart</button>
                     </form>
-                    <button class="btn btn-dark w-100">Add to cart</button>
                 </div>
             </div>
         </div>
