@@ -7,7 +7,7 @@ function addToCart($product_id, $title, $price, $quantity = 1) {
         $_SESSION['cart'] = array();
     }
 
-    // If product already in cart, increase quantity
+
     // if product already in cart increase quant
     if (isset($_SESSION['cart'][$product_id])) {
         $_SESSION['cart'][$product_id]['quantity'] += $quantity;

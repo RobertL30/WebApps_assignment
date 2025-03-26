@@ -37,7 +37,12 @@ $regularBooks = $productModel->getRegularBooks();
     <p class="card-text fw-bold">€<?php echo escape($book['price']);?></p>
 </div>
         <div class="card-footer bg-white border-top-0">
-            <button class="btn btn-dark w-100">Add to cart</button>
+            <form action="/Controllers/CartController.php" method="post">
+                <input type="hidden" name="product_id" value="<?php echo escape($book['id']);?>">
+                <input type="hidden" name="title" value="<?php echo escape($book['title']);?>">
+                <input type="hidden" name="price" value="<?php echo escape($book['price']);?>">
+            <button type="submit" name="add_to_cart" class="btn btn-dark w-100">Add to cart</button>
+            </form>
         </div>
     </div>
 </div>
