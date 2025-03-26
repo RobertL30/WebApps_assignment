@@ -62,8 +62,15 @@ $total = Cart::getCartTotal();
                  </tr>
                  <?php endforeach; ?>
              </tbody>
-
+             <tfoot>
+             <tr>
+                 <th colspan="3" class="text-end">Total:</th>
+                 <th>€<?php echo number_format($total, 2);?></th>
+             <th></th>
+             </tr>
+             </tfoot>
          </table>
 </div>
+<?php endif; ?>
 </body>
 </html>
