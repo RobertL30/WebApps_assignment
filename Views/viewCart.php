@@ -26,30 +26,31 @@ $total = Cart::getCartTotal();
     <h1 class="mb-4 text-center">Your shopping cart</h1>
 
     <?php if(empty($cart)): ?>
-    div<div class="alter alter-info">
+    <div class="alter alter-info">
         Your cart is empty. <a href="/Views/Shop.php">Why not check out our selection?</a>
     </div>
     <?php else: ?>
-    <div class="table-responsive"
-         <table class="Table table-hover">
+    <div class="table-responsive">
+         <table class="table table-hover">
              <thead>
              <tr>
                  <th>Title</th>
                  <th>Price</th>
                  <th>Quantity</th>
                  <th>Subtotal</th>
+                 <th>Actions</th>
              </tr>
              </thead>
              <tbody>
              <?php foreach ($cart as $product_id => $item): ?>
              <tr>
-                 <td><?php echo escape($item['Title']); ?></td>
-                 <td>€<?php echo escape($item['Price']);?></td>
+                 <td><?php echo escape($item['title']); ?></td>
+                 <td>€<?php echo escape($item['price']);?></td>
              <td>
              <form action="/Controllers/CartController.php" method="post" class="d-flex align-items-center">
-                 <input type="hidden" name="product_id" value"<?php echo $product_id; ?>">
+                 <input type="hidden" name="product_id" value="<?php echo $product_id; ?>">
                  <input type="number" name="quantity" value="<?php echo escape($item['quantity']); ?>" class="form-control" style="width: 100px;">
-                 <buttont type="submit" name="update_cart" class="btn btn-sm btn-outline-secondary ms-2">Update</buttont>
+                 <button type="submit" name="update_cart" class="btn btn-sm btn-outline-secondary ms-2">Update</button>
              </form>
              </td>
                  <td>€<?php echo number_format($item['price'] * $item['quantity'], 2); ?></td>
@@ -72,5 +73,7 @@ $total = Cart::getCartTotal();
          </table>
 </div>
 <?php endif; ?>
+    <?php include 'Layouts/Footer.php' ; ?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
