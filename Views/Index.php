@@ -32,13 +32,14 @@
                         <img src="/Views/Images/dracula.jpg" class="card-img-top mx-auto d-block mt-3" alt="Book Cover" style="width: 150px; height: 200px;">
                         <div class="card-body text-center">
                             <h5 class="card-title">Dracula</h5>
-                            <p class="card-text">€12.99</p>
+                            <p class="card-text">€13.99</p>
                             <a href="Shop.php">
                             <button class="btn btn-primary btn-sm">View Details</button>
                             </a>
                         </div>
                     </div>
                 </div>
+                
                 <!-- Book 2 -->
                 <div class="col-md-4 mb-3">
                     <div class="card">
