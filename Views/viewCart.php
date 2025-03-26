@@ -1,6 +1,6 @@
 <?php
-require_once '../Models/cart.php'
-require_once '../common.php'
+require_once '../Models/cart.php';
+require_once '../common.php';
 
 if (session_status() ==PHP_SESSION_NONE) {
     session_start();
@@ -44,8 +44,26 @@ $total = Cart::getCartTotal();
              <?php foreach ($cart as $product_id => $item): ?>
              <tr>
                  <td><?php echo escape($item['Title']); ?></td>
-                 <td><?php echo escape($item['Price']);?></td>
+                 <td>€<?php echo escape($item['Price']);?></td>
+             <td>
+             <form action="/Controllers/CartController.php" method="post" class="d-flex align-items-center">
+                 <input type="hidden" name="product_id" value"<?php echo $product_id; ?>">
+                 <input type="number" name="quantity" value="<?php echo escape($item['quantity']); ?>" class="form-control" style="width: 100px;">
+                 <buttont type="submit" name="update_cart" class="btn btn-sm btn-outline-secondary ms-2">Update</buttont>
+             </form>
+             </td>
+                 <td>€<?php echo number_format($item['price'] * $item['quantity'], 2); ?></td>
+             <td>
+             <form action="/Controllers/CartController.php" method="post">
+                 <input type="hidden" name="product_id" value="<?php echo $product_id"; ?>">
+                 <button type="submit" name="remove_from_cart" class="btn btn-sm btn-danger">Remove</button>
+                 </form>
+                 </td>
+                 </tr>
+                 <?php endforeach; ?>
              </tbody>
 
          </table>
 </div>
+</body>
+</html>
