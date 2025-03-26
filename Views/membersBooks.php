@@ -42,7 +42,12 @@ if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] !== true) {
     <h1 class="mb-4 text-center">Shop our exclusive, members collection!</h1>
 
     <!--success message -->
-    <?php if($showMessage): ?>
+    <?php if($showMessage):
+        if(isset($_SESSION['add_to_cart']) && $_SESSION['add_to_cart'] === true) {
+            $showMessage = true;
+            //clear after use
+            $_SESSION['added_to_cart'] = false;
+        }?>
         <div class="alert alert-success mb-4">
             Item added to cart.
         </div>
