@@ -7,7 +7,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<?php include 'Layouts\Header.php' ; ?>
+<?php include 'Views/Layouts/Header.php' ; ?>
 
 <!-- main content -->
 <div class="container my-5">
@@ -109,7 +109,7 @@
     </div>
 
 
-<?php include 'Layouts\Footer.php' ; ?>
+<?php include 'Views/Layouts/Header.php' ; ?>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
