@@ -1,6 +1,6 @@
 // Controllers/CartController.php
 <?php
-require_once '../Models/Cart.php';
+require_once '../Models/cart.php';
 require_once '../common.php';
 
 // Start session
@@ -37,7 +37,7 @@ if (isset($_POST['update_cart'])) {
 if (isset($_POST['remove_from_cart'])) {
     $product_id = $_POST['product_id'];
 
-    Cart::removeCartItem($product_id);
+    Cart::removeCartItem ($product_id);
 
     // Redirect back to cart page
     header("Location: /Views/cart.php");
