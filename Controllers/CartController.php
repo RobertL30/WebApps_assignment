@@ -49,4 +49,3 @@ if (isset($_POST['remove_from_cart'])) {
     header("Location: /Views/viewCart.php");
     exit();
 }
-?>

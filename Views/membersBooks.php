@@ -41,6 +41,13 @@ if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] !== true) {
 <div class="container my-5">
     <h1 class="mb-4 text-center">Shop our exclusive, members collection!</h1>
 
+    <!--success message -->
+    <?php if($showMessage): ?>
+        <div class="alert alert-success mb-4">
+            Item added to cart.
+        </div>
+    <?php endif; ?>
+
     <div class="row">
     <?php foreach ($memberBooks as $book): ?>
         <div class="col-md-4 mb-4">
@@ -53,6 +60,12 @@ if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] !== true) {
                     <p class="card-text fw-bold">€<?php echo escape($book['price']); ?></p>
                 </div>
                 <div class="card-footer bg-white border-top-0">
+                    <form action="/Controllers/CartController.php" method="post">
+                        <input type="hidden" name="product_id" value="<?php echo escape($book['id']);?>">
+                        <input type="hidden" name="title" value="<?php echo escape($book['title']);?>">
+                        <input type="hidden" name="price" value="<?php echo escape($book['price']);?>">
+                        <button type="submit" name="add_to_cart" class="btn btn-dark w-100">Add to cart</button>
+                    </form>
                     <button class="btn btn-dark w-100">Add to cart</button>
                 </div>
             </div>
