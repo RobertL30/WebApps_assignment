@@ -31,7 +31,7 @@ if (isset($_SESSION['added_to_cart']))
     <link href="/Views/CSS/Style.css" rel="stylesheet">
 </head>
 <body>
-<?php include '../Views/Layouts/Header.php'; ?>
+<?php include 'Layouts/Header.php'; ?>
 
 <div class="container my-5">
      <h1 class="mb-4 text-center">Shop our collection!</h1>
@@ -68,7 +68,7 @@ if (isset($_SESSION['added_to_cart']))
     <?php endforeach; ?>
 </div>
 
-<?php include '../Views/Layouts/Footer.php'; ?>
+<?php include 'Layouts/Footer.php'; ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
