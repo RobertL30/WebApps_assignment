@@ -29,11 +29,11 @@
                 <!-- Book 1 -->
                 <div class="col-md-4 mb-3">
                     <div class="card">
-                        <img src="Views/Images/dracula.jpg" class="card-img-top mx-auto d-block mt-3" alt="Book Cover" style="width: 150px; height: 200px;">
+                        <img src="/Views/Images/dracula.jpg" class="card-img-top mx-auto d-block mt-3" alt="Book Cover" style="width: 150px; height: 200px;">
                         <div class="card-body text-center">
                             <h5 class="card-title">Dracula</h5>
                             <p class="card-text">€13.99</p>
-                            <a href="Views/Shop.php">
+                            <a href="/Views/Shop.php">
                             <button class="btn btn-primary btn-sm">View Details</button>
                             </a>
                         </div>
@@ -43,11 +43,11 @@
                 <!-- Book 2 -->
                 <div class="col-md-4 mb-3">
                     <div class="card">
-                        <img src="Views/Images/frank.jpg" class="card-img-top mx-auto d-block mt-3" alt="Book Cover" style="width: 150px; height: 200px;">
+                        <img src="/Views/Images/frank.jpg" class="card-img-top mx-auto d-block mt-3" alt="Book Cover" style="width: 150px; height: 200px;">
                         <div class="card-body text-center">
                             <h5 class="card-title">Frankenstein</h5>
                             <p class="card-text">€14.99</p>
-                            <a href="Views/Shop.php">
+                            <a href="/Views/Shop.php">
                                 <button class="btn btn-primary btn-sm">View Details</button>
                             </a>
                         </div>
@@ -56,11 +56,11 @@
                 <!-- Book 3 -->
                 <div class="col-md-4 mb-3">
                     <div class="card">
-                        <img src="Views/Images/lovecraft.jpg" class="card-img-top mx-auto d-block mt-3" alt="Book Cover" style="width: 150px; height: 200px;">
+                        <img src="/Views/Images/lovecraft.jpg" class="card-img-top mx-auto d-block mt-3" alt="Book Cover" style="width: 150px; height: 200px;">
                         <div class="card-body text-center">
                             <h5 class="card-title">H.P Lovecraft Anthology</h5>
                             <p class="card-text">€29.99</p>
-                            <a href="Views/Shop.php">
+                            <a href="/Views/Shop.php">
                                 <button class="btn btn-primary btn-sm">View Details</button>
                             </a>
                         </div>
@@ -95,9 +95,9 @@
                         </div>
                         <div class="col-md-5 d-flex align-items-center justify-content-center">
                             <div class="text-center">
-                                <img src="Views/Images/membership.png" alt="Membership" class="img-fluid rounded mb-3" style="max-width: 200px;">
+                                <img src="/Views/Images/membership.png" alt="Membership" class="img-fluid rounded mb-3" style="max-width: 200px;">
                                 <div>
-                                    <a href="Views/auth/sign_up.php" class="btn btn-dark">Create Account</a>
+                                    <a href="/Views/auth/sign_up.php" class="btn btn-dark">Create Account</a>
 
                                 </div>
                             </div>
