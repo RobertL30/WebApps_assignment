@@ -13,7 +13,7 @@ if (session_status() ==PHP_SESSION_NONE) {
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
         <!-- Css linking -->
-        <link href="/Views/CSS/Style.css" rel="stylesheet">
+        <link href="Views/CSS/Style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -21,7 +21,7 @@ if (session_status() ==PHP_SESSION_NONE) {
 <div class="container">
     <!-- Logo section -->
     <a class="navbar-brand" href="/Index.php">
-        <img src="/Views/Images/Logo.png" alt="Book store Logo" width="200" height="200">
+        <img src="Views/Images/Logo.png" alt="Book store Logo" width="200" height="200">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNAV">
         <span class="navbar-toggler-icon"></span>
@@ -29,29 +29,29 @@ if (session_status() ==PHP_SESSION_NONE) {
     <div class="collapse navbar-collapse" id="navbarNAV">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="/Index.php">Home</a>
+                <a class="nav-link" href="Index.php">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/Views/Shop.php">Shop</a>
+                <a class="nav-link" href="Views/Shop.php">Shop</a>
             </li>
             <li class="nav-item">
                 <?php if (isset($_SESSION['is_logged_in']) && $_SESSION['is_logged_in'] === true): ?>
-                <a class="nav-link" href="/Views/membersBooks.php">Members Books</a>
+                <a class="nav-link" href="Views/membersBooks.php">Members Books</a>
                 <?php else: ?>
-                <a class="nav-link" href="/Views/auth/sign_in.php">Members Books</a>
+                <a class="nav-link" href="Views/auth/sign_in.php">Members Books</a>
                 <?php endif; ?>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/Views/viewCart.php">Cart</a>
+                <a class="nav-link" href="Views/viewCart.php">Cart</a>
             </li>
             <li class="nav-item">
             <?php if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] !== true): ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Views/auth/sign_in.php">Sign in</a>
+                    <a class="nav-link" href="Views/auth/sign_in.php">Sign in</a>
                 </li>
             <?php else: ?>
             <li class="new-item">
-                <a class="nav-link" style="background-color: #ffeeee; font-weight: bold;" href="/Controllers/sign_out_process.php">Sign out</a>
+                <a class="nav-link" style="background-color: #ffeeee; font-weight: bold;" href="Controllers/sign_out_process.php">Sign out</a>
         </li>
             <?php endif; ?>
 
