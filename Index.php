@@ -33,7 +33,7 @@
                         <div class="card-body text-center">
                             <h5 class="card-title">Dracula</h5>
                             <p class="card-text">€13.99</p>
-                            <a href="/Views/Shop.php">
+                            <a href="Shop.php">
                             <button class="btn btn-primary btn-sm">View Details</button>
                             </a>
                         </div>
@@ -47,7 +47,7 @@
                         <div class="card-body text-center">
                             <h5 class="card-title">Frankenstein</h5>
                             <p class="card-text">€14.99</p>
-                            <a href="/Views/Shop.php">
+                            <a href="Shop.php">
                                 <button class="btn btn-primary btn-sm">View Details</button>
                             </a>
                         </div>
@@ -60,7 +60,7 @@
                         <div class="card-body text-center">
                             <h5 class="card-title">H.P Lovecraft Anthology</h5>
                             <p class="card-text">€29.99</p>
-                            <a href="/Views/Shop.php">
+                            <a href="Shop.php">
                                 <button class="btn btn-primary btn-sm">View Details</button>
                             </a>
                         </div>
@@ -97,7 +97,7 @@
                             <div class="text-center">
                                 <img src="/Views/Images/membership.png" alt="Membership" class="img-fluid rounded mb-3" style="max-width: 200px;">
                                 <div>
-                                    <a href="/Views/auth/sign_up.php" class="btn btn-dark">Create Account</a>
+                                    <a href="../Views/auth/sign_up.php" class="btn btn-dark">Create Account</a>
 
                                 </div>
                             </div>
@@ -109,7 +109,7 @@
     </div>
 
 
-<?php include 'Views/Layouts/Footer.php' ; ?>
+<?php include 'Views/Layouts/Header.php' ; ?>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -20,7 +20,7 @@ if (session_status() ==PHP_SESSION_NONE) {
 <nav class="Navbar navbar-expand-lg navbar-light bg-light">
 <div class="container">
     <!-- Logo section -->
-    <a class="navbar-brand" href="/Index.php">
+    <a class="navbar-brand" href="/Index.php/">
         <img src="/Views/Images/Logo.png" alt="Book store Logo" width="200" height="200">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNAV">
