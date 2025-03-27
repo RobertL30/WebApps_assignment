@@ -20,7 +20,7 @@ if (session_status() ==PHP_SESSION_NONE) {
 <nav class="Navbar navbar-expand-lg navbar-light bg-light">
 <div class="container">
     <!-- Logo section -->
-    <a class="navbar-brand" href="/Index.php/">
+    <a class="navbar-brand" href="/Views/Index.php">
         <img src="/Views/Images/Logo.png" alt="Book store Logo" width="200" height="200">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNAV">
@@ -29,7 +29,7 @@ if (session_status() ==PHP_SESSION_NONE) {
     <div class="collapse navbar-collapse" id="navbarNAV">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="/Index.php">Home</a>
+                <a class="nav-link" href="/Views/Index.php">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/Views/Shop.php">Shop</a>
@@ -43,6 +43,9 @@ if (session_status() ==PHP_SESSION_NONE) {
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/Views/viewCart.php">Cart</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
             <?php if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] !== true): ?>
