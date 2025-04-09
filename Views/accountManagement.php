@@ -60,11 +60,11 @@ if (isset($_SESSION['account_updated']) && $_SESSION['account_updated'] === true
     <h3 class="mb-0">Account Information</h3>
 </div>
 
-<div class="card-body">
+<div class="card-body p-4">
     <form action="/Controllers/updateAccount.php" method="post">
         <!-- first name-->
          <div class="mb-3">
-            <label for="firstName" class="form-label">First Name></label>
+         <label for="firstName" class="form-label">First Name</label>
             <input type="text" class="form-control" id="firstName" name="firstName" value="<?php echo escape($user['first_name']); ?>" required>
 </div>
 
@@ -115,6 +115,7 @@ if (isset($_SESSION['account_updated']) && $_SESSION['account_updated'] === true
 </div>
 <div class="card-body">
     <p class="text-danger"> Warning: This cannot be undone. You will need to create a new account and all your data will be permanently deleted.</p>
+    <form action="/Controllers/deleteAccount.php" method="post">
     <div class="d-grid">
         <button type="submit" class="btn btn-danger">Delete My Account</button>
 </div>
