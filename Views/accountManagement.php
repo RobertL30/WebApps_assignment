@@ -54,3 +54,55 @@ if (isset($_SESSION['account_updated']) && $_SESSION['account_updated'] === true
 </div> 
 <?php endif; ?>
 
+<dib class="card shadowe mb-4">
+    <div class="card-header bg-dark text-white">
+
+    <h3 class="mb-0">Account Information</h3>
+</div>
+
+<div class="card-Body">
+    <form action="/Controllers/FILL_IN_LATER.php" method="post">
+        <!-- first name-->
+         <div class="mb-3">
+            <label for="firstName" class="form-label">First Name></label>
+            <input type="text" class="form-control" id="firstName" name="firstName" value="<?php echo escape($user['first_name']); ?>" required>
+</div>
+
+<!-- Last Name -->
+<div class="mb-3">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" value="<?php echo escape($user['last_name']); ?>" required>
+                        </div>
+                        
+                        <!-- Address -->
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <textarea class="form-control" id="address" name="address" rows="3" required><?php echo escape($user['address']); ?></textarea>
+                        </div>
+                        
+                        <!-- Email Address (readonly as it's used for login) -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" value="<?php echo escape($user['email']); ?>" required>
+                        </div>
+                        
+                        <!-- Contact Number -->
+                        <div class="mb-3">
+                            <label for="contactNumber" class="form-label">Contact Number</label>
+                            <input type="tel" class="form-control" id="contactNumber" name="contactNumber" value="<?php echo escape($user['contact_number']); ?>" required>
+                        </div>
+                        
+                        <!-- Username (readonly as it's used for login) -->
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" name="username" value="<?php echo escape($user['username']); ?>" readonly>
+                            <small class="text-muted">Username cannot be changed</small>
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Update Account</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
