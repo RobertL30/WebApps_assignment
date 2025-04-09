@@ -55,8 +55,14 @@ if (session_status() ==PHP_SESSION_NONE) {
                 <a class="nav-link" href="/Views/viewCart.php">Cart</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="/Views/accountManagement.php">Account Management</a>
             </li>
+            <?php endif; ?>
+            <?php if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] !== true): ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Views/auth/sign_in.php">Sign in</a>
+                </li>
+            <?php else: ?>
         </ul>
 
     </div>
