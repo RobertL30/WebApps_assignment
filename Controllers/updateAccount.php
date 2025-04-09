@@ -24,11 +24,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $address = trim($_POST['address']);
     $email = trim($_POST['email']);
     $contact_number = trim($_POST['contactNumber']);
+    WHERE id = :user_id";
 
     $errors = [];
 
     // verify the email is valid
-    if(!filter-var($email, FILTER_VALIDATE_EMAIL)) {
+    if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errors[] = "Invalid email format"; 
     }
 
@@ -56,6 +57,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
             
             $stmt->execute();
+
+            $_SESSION['account_update'] = true;
+            header("Location: /Views/accountManagement.php");
+            exit();
+        } catch (PDOexception $e) {
+            $errors[] = "Database error: ". $e->getMessage();
         }
     }
+
+    if (!empty($errors)) {
+        $_SESSION['update_errors'] = $errors;
+        header("Location: /Views/accountManagement.php")
+        exit();
+
+    }
 }
+    
