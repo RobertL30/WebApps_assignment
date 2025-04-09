@@ -5,14 +5,14 @@ if (session_status() == PHP_SESSION_NONE)
     }
 
 // checks if user is logged in and redirect to login if not
-if (isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] !== true) {
+if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] !== true) {
     header("Location: /Views/auth/sign_in.php");
     exit();
 }
 
 //db connection
-require_once '/Config/DBconnect.php';
-require_once '/common.php';
+require_once '../Config/DBconnect.php';
+require_once '../common.php';
 
 //pulls user data from database
 $user_id = $_SESSION['user_id']
@@ -54,7 +54,7 @@ if (isset($_SESSION['account_updated']) && $_SESSION['account_updated'] === true
 </div> 
 <?php endif; ?>
 
-<dib class="card shadowe mb-4">
+<dib class="card shadow mb-4">
     <div class="card-header bg-dark text-white">
 
     <h3 class="mb-0">Account Information</h3>
