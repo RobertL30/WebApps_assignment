@@ -15,7 +15,7 @@ require_once '../Config/DBconnect.php';
 require_once '../common.php';
 
 //pulls user data from database
-$user_id = $_SESSION['user_id']
+$user_id = $_SESSION['user_id'];
 $sql = "SELECT * FROM users WHERE id = :user_id";
 $stmt = $connection->prepare($sql);
 $stmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
@@ -54,7 +54,7 @@ if (isset($_SESSION['account_updated']) && $_SESSION['account_updated'] === true
 </div> 
 <?php endif; ?>
 
-<dib class="card shadow mb-4">
+<div class="card shadow mb-4">
     <div class="card-header bg-dark text-white">
 
     <h3 class="mb-0">Account Information</h3>
