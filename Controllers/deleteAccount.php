@@ -6,5 +6,29 @@ if(session_status() == PHP_SESSION_NONE) {
 
 if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] !== true ) 
 {
-    
+    header("Location: /Views/Auth/sign_in.php");
+    exit();
+}
+
+require_once '../Config/DBconnect.php';
+
+//process the account deletion
+if ($_SERVER['REQUEST_METHOD'] === 'POST') 
+{
+    try {
+        $user_id $_SESSION['user_id'];
+        $sql = "DELETE FROM users WHERE id = :user_id";
+        $stmt = $connection->prepare($sql);
+
+        $_SESSION = array ();
+        session_destroy();
+
+        //send user back to home with message 
+        session_start();
+        $_SESSION['account_deleted'] = true;
+        header ("location: /Views/Index.php");
+        exit();
+    } catch (PDOexception $e) {
+        
+    }
 }
