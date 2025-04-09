@@ -3,6 +3,12 @@
 if (session_status() ==PHP_SESSION_NONE) {
     session_start();
     }
+
+    if (isset($_SESSION['account_deleted']) && $_SESSION['account_deleted'] === true)
+    {
+        $accountDeleted = true;
+        unset($_SESSION['account_deleted']);
+    }
 ?>
 
 <!DOCTYPE html>
