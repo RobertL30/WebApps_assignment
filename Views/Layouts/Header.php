@@ -49,7 +49,6 @@ if (session_status() ==PHP_SESSION_NONE) {
             </li>
 
 
-            <li class="nav-item">
             <?php if (!isset($_SESSION['is_logged_in']) || $_SESSION['is_logged_in'] !== true): ?>
                 <li class="nav-item">
                     <a class="nav-link" href="/Views/auth/sign_in.php">Sign in</a>
