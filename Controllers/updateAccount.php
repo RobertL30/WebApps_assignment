@@ -31,4 +31,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if(!filter-var($email, FILTER_VALIDATE_EMAIL)) {
         $errors[] = "Invalid email format"; 
     }
+
+    if (empty($first_name) empty($last_name) || empty($address) || empty($email) || empty($contact_number)) {
+        $errors[] = "All fields are required";
+    }
 }
