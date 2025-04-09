@@ -106,3 +106,26 @@ if (isset($_SESSION['account_updated']) && $_SESSION['account_updated'] === true
                     </form>
                 </div>
             </div>
+
+
+            <!-- delete account section -->
+<div class="card shadow">
+    <div class="card-header bg-danger text-white">
+        <h3 class="mb-0">Delete Account</h3>
+</div>
+<div class="card-body">
+    <p class="text-danger"> Warning: This cannot be undone. You will need to create a new account and all your data will be permanently deleted.</p>
+    <div class="d-grid">
+        <button type="submit" class="btn btn-danger">Delete My Account</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<?php include 'Layouts/Footer.php'; ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
