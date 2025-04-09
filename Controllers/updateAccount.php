@@ -19,4 +19,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user_id = $_SESSION['user_id'];
 
     //sanitise & Validate
+    $first_name = trim($_POST['firstName']);
+    $last_name = trim($_POST['lastName']);
+    $address = trim($_POST['address']);
+    $email = trim($_POST['email']);
+    $contact_number = trim($_POST['contactNumber']);
+
+    $errors = [];
+
+    // verify the email is valid
+    if(!filter-var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = "Invalid email format"; 
+    }
 }
