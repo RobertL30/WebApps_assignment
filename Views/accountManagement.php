@@ -30,3 +30,27 @@ if (isset($_SESSION['account_updated']) && $_SESSION['account_updated'] === true
 }
 
 ?>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Management</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Views/CSS/Style.css" rel="stylesheet">
+</head>
+<body>
+<?php include 'Layouts/Header.php'; ?>
+
+<div class="row">
+
+<div class="col-12">
+    <h1 class="mb-4"> Account Management</h1>
+
+<?php if($updateSuccess):?>
+    <div class="alert alert-success mb-4">
+        Your account information was successfully account_updated</div>
+
+</div> 
+<?php endif; ?>
+
