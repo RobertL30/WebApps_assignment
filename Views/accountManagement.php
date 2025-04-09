@@ -61,7 +61,7 @@ if (isset($_SESSION['account_updated']) && $_SESSION['account_updated'] === true
 </div>
 
 <div class="card-Body">
-    <form action="/Controllers/FILL_IN_LATER.php" method="post">
+    <form action="/Controllers/updateAccount.php" method="post">
         <!-- first name-->
          <div class="mb-3">
             <label for="firstName" class="form-label">First Name></label>
