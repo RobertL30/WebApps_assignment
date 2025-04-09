@@ -31,6 +31,7 @@ if (isset($_SESSION['account_updated']) && $_SESSION['account_updated'] === true
 
 ?>
 
+<!Doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -41,15 +42,14 @@ if (isset($_SESSION['account_updated']) && $_SESSION['account_updated'] === true
 </head>
 <body>
 <?php include 'Layouts/Header.php'; ?>
-
+<dib class="container my-5">
 <div class="row">
-
 <div class="col-12">
     <h1 class="mb-4"> Account Management</h1>
 
 <?php if($updateSuccess):?>
     <div class="alert alert-success mb-4">
-        Your account information was successfully account_updated</div>
+        Your account information was successfully</div>
 
 </div> 
 <?php endif; ?>
@@ -60,7 +60,7 @@ if (isset($_SESSION['account_updated']) && $_SESSION['account_updated'] === true
     <h3 class="mb-0">Account Information</h3>
 </div>
 
-<div class="card-Body">
+<div class="card-body">
     <form action="/Controllers/updateAccount.php" method="post">
         <!-- first name-->
          <div class="mb-3">
