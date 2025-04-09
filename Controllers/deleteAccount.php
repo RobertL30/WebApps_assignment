@@ -16,9 +16,12 @@ require_once '../Config/DBconnect.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') 
 {
     try {
-        $user_id $_SESSION['user_id'];
+        $user_id = $_SESSION['user_id'];
         $sql = "DELETE FROM users WHERE id = :user_id";
+        $stmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
         $stmt = $connection->prepare($sql);
+        $stmt->execute();
+
 
         $_SESSION = array ();
         session_destroy();
