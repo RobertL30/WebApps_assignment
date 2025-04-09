@@ -35,4 +35,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($first_name) empty($last_name) || empty($address) || empty($email) || empty($contact_number)) {
         $errors[] = "All fields are required";
     }
+
+    if (empty($errors)) {
+        try{
+            $sql = "UPDATE users SET
+            first_name = :first_name,
+            last_name = :last_name,
+            address = :address,
+            email = :email,
+            contact_number = :contact_number
+            WHERE id = :user_id;
+
+            $stmt = $connection->prepare($sql);
+
+            $stmt->bindParam(':first_name', $first_name, PDO::PARAM_STR);
+            $stmt->bindParam(':last_name', $last_name, PDO::PARAM_STR);
+            $stmt->bindParam(':address', $address, PDO::PARAM_STR);
+            $stmt->bindParam(':email', $email, PDO::PARAM_STR);
+            $stmt->bindParam(':contact_number', $contact_number, PDO::PARAM_STR);
+            $stmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
+            
+            $stmt->execute();
+        }
+    }
 }
