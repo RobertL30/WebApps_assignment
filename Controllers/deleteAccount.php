@@ -31,8 +31,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
         $_SESSION['account_deleted'] = true;
         header ("location: /Views/Index.php");
         exit();
-    } catch (PDOexception $e) {
-        $_SESSION['delete_error'] ="Error deleting user account:" .e$->getMessage();
+    } catch (PDOException $e) {
+        $_SESSION['delete_error'] = "Error deleting user account:" .$e->getMessage();
         header("Location: /Views/accountManagement.php");
         exit();
     }
