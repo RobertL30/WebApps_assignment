@@ -1,7 +1,7 @@
 
 <?php
 
-if(session_start() == PHP_SESSION_NONE) {
+if(session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
@@ -24,8 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $address = trim($_POST['address']);
     $email = trim($_POST['email']);
     $contact_number = trim($_POST['contactNumber']);
-    WHERE id = :user_id";
-
+   
     $errors = [];
 
     // verify the email is valid
@@ -45,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             address = :address,
             email = :email,
             contact_number = :contact_number
-            WHERE id = :user_id;
+            WHERE id = :user_id";
 
             $stmt = $connection->prepare($sql);
 
