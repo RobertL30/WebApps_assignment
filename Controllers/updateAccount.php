@@ -58,6 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt->execute();
 
             $_SESSION['account_update'] = true;
+            
             header("Location: /Views/accountManagement.php");
             exit();
         } catch (PDOexception $e) {
