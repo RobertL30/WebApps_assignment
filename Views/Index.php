@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PaperTrail Book Store</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
 <?php include 'Layouts\Header.php' ; ?>
@@ -13,8 +14,8 @@
 <div class="container my-5">
 
     <?php if(isset($accountDeleted) && $accountDeleted === true): ?>
-        <dib class=alert alert-success mb-4">
-        <i class=bi bi-check-circle-fill me-2"></i>
+        <div class="alert alert-success mb-4">
+        <i class="bi bi-check-circle-fill me-2"></i>
         Your account has been deleted successfully.
     </div>
     <?php endif; ?>
