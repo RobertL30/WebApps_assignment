@@ -11,6 +11,14 @@
 
 <!-- main content -->
 <div class="container my-5">
+
+    <?php if(isset($accountDeleted) && $accountDeleted === true): ?>
+        <dib class=alert alert-success mb-4">
+        <i class=bi bi-check-circle-fill me-2"></i>
+        Your account has been deleted successfully.
+    </div>
+    <? php endif; ?>
+
     <!-- intro Section -->
     <div class="row mb-4">
         <div class="col-12">
