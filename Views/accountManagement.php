@@ -42,14 +42,14 @@ if (isset($_SESSION['account_updated']) && $_SESSION['account_updated'] === true
 </head>
 <body>
 <?php include 'Layouts/Header.php'; ?>
-<dib class="container my-5">
+<div class="container my-5">
 <div class="row">
 <div class="col-12">
     <h1 class="mb-4"> Account Management</h1>
 
 <?php if($updateSuccess):?>
     <div class="alert alert-success mb-4">
-        Your account information was successfully</div>
+        Your account information was successfully updated</div>
 
 </div> 
 <?php endif; ?>
