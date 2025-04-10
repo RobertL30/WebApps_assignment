@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (!empty($errors)) {
         $_SESSION['update_errors'] = $errors;
-        header("Location: /Views/accountManagement.php")
+        header("Location: /Views/accountManagement.php");
         exit();
 
     }
