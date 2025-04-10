@@ -17,7 +17,7 @@
         <i class=bi bi-check-circle-fill me-2"></i>
         Your account has been deleted successfully.
     </div>
-    <? php endif; ?>
+    <?php endif; ?>
 
     <!-- intro Section -->
     <div class="row mb-4">
