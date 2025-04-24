@@ -33,7 +33,7 @@
     <!-- inventory -->
     <div class="row mb-4">
         <div class="col-12">
-            <h3>This month's special!</h3>
+            <h3>This month's specials!</h3>
             <div class="row">
                 <!-- Book 1 -->
                 <div class="col-md-4 mb-3">
