@@ -13,6 +13,9 @@
 |Product listing        | View Members books as guest    	     | User directed to Sign in page     			       | Pass	     |
 |Product listing        | View Members books as Member(Signed in)    | Successful access to Members Books webpage 		       | Pass	     |
 |Shopping cart          | Clicking add to cart button on Members and non-member books   | Books are successfully added to cart and subtotal displayed	       | Pass	     |
-|Shopping cart      | Verify update quantity and remove buttons     | increase and decreasing quantity reflects in subtotal change, Remove button removes items from Cart entirely.		       | Pass	     |
-
-
+|Shopping cart      | Verify Update Quantity   | Increase and decreasing quantity reflects in subtotal change, Remove button removes items		       | Pass	     |
+|Shopping cart      | Verify Remove Button   | Selected item is removed from the Cart		       | Pass	     |
+| CRUD – Create     | Create new user account                               | Product inserted into DB                          	| Pass      |
+| CRUD – Read       | Display products from DB, Display account management details                               | All products retrieved and shown, Account management reading from DB                 	| Pass      |          
+| CRUD – Update     | Update account details                                   | Updates successfully applied to the User Table                              	| Pass      |          
+| CRUD – Delete     | Delete Account                                        | Account deleted, user redirect, details removed from DB                           	| Pass      |        
