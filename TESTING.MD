@@ -18,4 +18,5 @@
 | CRUD – Create     | Create new user account                               | Product inserted into DB                          	| Pass      |
 | CRUD – Read       | Display products from DB, Display account management details                               | All products retrieved and shown, Account management reading from DB                 	| Pass      |          
 | CRUD – Update     | Update account details                                   | Updates successfully applied to the User Table                              	| Pass      |          
-| CRUD – Delete     | Delete Account                                        | Account deleted, user redirect, details removed from DB                           	| Pass      |        
+| CRUD – Delete     | Delete Account                                        | Account deleted, user redirect, details removed from DB                           	| Pass      |     
+| Sessions          | Session is destroyed on logout              | User logged out securely                          | Pass      | 
