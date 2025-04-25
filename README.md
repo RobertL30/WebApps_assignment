@@ -8,7 +8,7 @@ PaperTrail is an online book store built with PHP that enables users to browse b
 * Session Management
 * Account Management (View, Update, Delete)
 * Shopping Cart Functionality
-* Member-only and Non-Member Book Sections
+* Restricted Member-only and unrestricted Non-Member Book Sections
 
 ## Learning Implementation
 This project uses numerous concepts from the Web Application Development module. Focusing on PHP session management, authentication, and CRUD operations.
