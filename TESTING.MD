@@ -20,3 +20,9 @@
 | CRUD – Update     | Update account details                                   | Updates successfully applied to the User Table                              	| Pass      |          
 | CRUD – Delete     | Delete Account                                        | Account deleted, user redirect, details removed from DB                           	| Pass      |     
 | Sessions          | Session is destroyed on logout              | User logged out securely                          | Pass      | 
+
+
+## Security / Validation checks
+| Area Of Test		| Description                                | Expected Results                                                | Pass / Fail |
+|-----------------------|--------------------------------------------|-----------------------------------------------------------------|-------------|
+|Sign Up Form		| Check email validation and required fields | Error shown for invalid email or blank fields                   | Pass	     |
