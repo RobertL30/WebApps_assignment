@@ -25,4 +25,5 @@
 ## Security / Validation checks
 | Area Of Test		| Description                                | Expected Results                                                | Pass / Fail |
 |-----------------------|--------------------------------------------|-----------------------------------------------------------------|-------------|
-|Sign Up Form		| Check email validation and required fields | Error shown for invalid email or blank fields                   | Pass	     |
+| Forms with empty fields    | Submit form without data                               | User prompted to fill field, no data processed    | Pass          |       
+| Invalid Email Format      | Register with wrong email format                       | Rejected with prompt to enter valid email                | Pass           |
