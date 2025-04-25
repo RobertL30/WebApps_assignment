@@ -23,7 +23,17 @@
 
 
 ## Security / Validation checks
+
 | Area Of Test		| Description                                | Expected Results                                                | Pass / Fail |
 |-----------------------|--------------------------------------------|-----------------------------------------------------------------|-------------|
 | Forms with empty fields    | Submit form without data                               | User prompted to fill field, no data processed    | Pass          |       
 | Invalid Email Format      | Register with wrong email format                       | Rejected with prompt to enter valid email                | Pass           |
+
+## Interface and Usability testing
+
+| Area                     | Description                                      | Pass/Fail |
+|--------------------------|--------------------------------------------------|------------
+| Navigation               | Menu and links function correctly                | Pass          |
+| Image Alt Tags           | All images have alt text                         | Pass          |
+| Text Readability         | Fonts are clear, contrast is accessible          | Pass          |
+| Error Messages           | Shown clearly and helpfully                      | Pass          |
