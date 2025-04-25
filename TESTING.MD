@@ -13,4 +13,6 @@
 |Product listing        | View Members books as guest    	     | User directed to Sign in page     			       | Pass	     |
 |Product listing        | View Members books as Member(Signed in)    | Successful access to Members Books webpage 		       | Pass	     |
 |Shopping cart          | Clicking add to cart button on Members and non-member books   | Books are successfully added to cart and subtotal displayed	       | Pass	     |
+|Shopping cart      | Verify update quantity and remove buttons     | increase and decreasing quantity reflects in subtotal change, Remove button removes items from Cart entirely.		       | Pass	     |
+
 
