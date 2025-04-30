@@ -43,6 +43,12 @@ User input is sanitized to prevent XSS attacks as taught in the course:
 * Implementation of the escape() function in common.php
 * Consistent usage throughout the application
 
+## Shopping Cart Implementation
+The Shopping cart was developed based on concepts learned in the Web Application development module, as taught by Dr Robert Smith
+* Session Management: The cart uses PHP sessions to store and manage cart data across multiple web pages. This implementation applied the session handling methods taught in the "Login with Sessions" Lab
+* From Processing: The carts operations, add, update and delete, rely on processing data submitted through from using POST method. This uses principals of form handling and POST processing covered in the "Building a no-frills CRUD APP"
+
+
 ## Project Structure
 * /Config - Database configuration
 * /Controllers - Application logic
